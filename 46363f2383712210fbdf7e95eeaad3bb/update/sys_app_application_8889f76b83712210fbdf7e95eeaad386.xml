@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category display_value="">Custom Applications</category>
+        <description>Device management and Process delivery</description>
+        <device_type>browser</device_type>
+        <hint>Device management and Process delivery</hint>
+        <name/>
+        <order/>
+        <roles>x_1650089_vansh.device_management,x_1650089_vansh.dispatch_management,x_1650089_vansh.release_management,x_1650089_vansh.end_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 11:48:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8889f76b83712210fbdf7e95eeaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vansh Agrawal</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Vansh Agrawal" source="x_1650089_vansh">46363f2383712210fbdf7e95eeaad3bb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Vansh Agrawal">46363f2383712210fbdf7e95eeaad3bb</sys_scope>
+        <sys_update_name>sys_app_application_8889f76b83712210fbdf7e95eeaad386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 11:48:41</sys_updated_on>
+        <title>Vansh Agrawal</title>
+        <view_name/>
+    </sys_app_application>
+</record_update>
