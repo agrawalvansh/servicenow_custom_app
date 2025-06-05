@@ -9,12 +9,16 @@
         <element attributes="edge_encryption_enabled=true" label="Business Justification" max_length="4000" name="u_business_justification" type="string"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="u_price" read_only="true" type="price"/>
         <element label="Quantity" mandatory="true" max_length="40" name="u_quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Reminder for Pickup" max_length="40" name="u_reminder_for_pickup" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="u_state" type="string">
             <choice>
+                <element inactive_on_update="false" label="In-progress" sequence="3" value="in-progress"/>
                 <element inactive_on_update="false" label="Delivered" sequence="0" value="delivered"/>
+                <element inactive_on_update="false" label="Delivery Failed" sequence="2" value="delivery failed"/>
                 <element inactive_on_update="false" label="Cancelled" sequence="1" value="cancelled"/>
             </choice>
         </element>
         <element attributes="encode_utf8=false" label="Device Name" mandatory="true" max_length="32" name="u_device_name" reference="x_1650089_vansh_ai_devices" type="reference"/>
+        <element attributes="omit_sys_original=true" label="Total Cost" max_length="20" name="u_total_cost" read_only="true" type="price"/>
     </element>
 </database>

@@ -15,8 +15,17 @@
     if (g_form.getValue('u_device_name') == '') {
         g_form.setSectionDisplay('device_details', false);
         g_form.setSectionDisplay('delivery_details', false);
+    } else {
+        g_form.getReference('u_device_name', getDetails);
     }
 
+}
+
+function getDetails(details) {
+    g_form.setValue('u_model', details.model_number);
+    g_form.setValue('u_device_description', details.short_description);
+    g_form.setValue('u_price', details.u_price);
+    g_form.setValue('u_warranty_expiration', details.warranty_expiration);
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -24,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f3e548bb83b12210fbdf7e95eeaad362</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Hide the Section</sys_name>
         <sys_overrides/>
         <sys_package display_value="Vansh Agrawal" source="x_1650089_vansh">46363f2383712210fbdf7e95eeaad3bb</sys_package>
@@ -32,7 +41,7 @@
         <sys_scope display_value="Vansh Agrawal">46363f2383712210fbdf7e95eeaad3bb</sys_scope>
         <sys_update_name>sys_script_client_f3e548bb83b12210fbdf7e95eeaad362</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-06-04 13:00:16</sys_updated_on>
+        <sys_updated_on>2025-06-05 09:53:41</sys_updated_on>
         <table>x_1650089_vansh_device_request</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
